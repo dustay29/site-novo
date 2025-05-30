@@ -1,0 +1,364 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-bar {
+    background: #313131;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px ;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    background: transparent;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; 
+  }
+  
+  .logo-redes {
+    width: 30px; 
+    height: 20px;
+  }
+  
+
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-box button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .img-border-cinza {
+    border-radius: 50%;
+    border-color: #313131;
+    border-width: 2px;
+    border-style:solid;
+    padding: 30px; /* aumenta o espaço interno */
+      }
+  
+  .img-border-dourado {
+    border-radius: 100%;
+    border-color: #c59a4c;
+    border-width: 2px;
+    border-style:solid;
+    padding: 30px; /* aumenta o espaço interno */
+  }
+
+  .logo-left, .logo-right {
+    width: 14%;
+  }
+  
+  .menu-icons {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #292929;
+    font-weight: bold;
+  }
+  
+  .menu-icons a img {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-icons a:nth-child(2), 
+  .menu-icons a:nth-child(4) {
+    color: #c59a4c; 
+
+
+  }
+  
+  * { box-sizing: border-box; }
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background: #fff; 
+}
+
+/* CARROSSEL */
+
+.carousel {
+  position: relative;
+  max-width: auto;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.banner-text {
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+  color: #313131;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 24px;
+  color: #313131;
+  margin: 10px 0;
+}
+
+.banner-text p span {
+  color: #c59a52;
+  font-weight: bold;
+}
+
+.banner-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #c59a52;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.banner-image img {
+  width: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #c59a52;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #313131;
+}
+
+/* PRODUTOS */
+  
+  .produtos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #313131;
+  }
+  
+  .produtos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .destaque {
+    color: #c59a52;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c59a4c;
+  }
+  
+  .card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #c59a4c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #c59a52;
+  }
+  
+  /* INVESTIMENTO */
+
+.investimentos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #c59a4c;
+}
+
+.investimentos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .destaque-investimentos {
+    color: #313131;
+  }
+  
+  .cards-investimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .cards-investimentos {
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cards-investimentos:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cards-investimentos h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c59a4c;
+  }
+  
+  .cards-investimentos img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .cards-investimentos p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-investimentos {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #c59a4c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-investimentos:hover {
+    background: #c59a52;
+  }
