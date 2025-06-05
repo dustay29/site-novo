@@ -118,19 +118,26 @@
 
   .icon-1:hover{
     transform: scale(1.05);
+    transition: transform 0.5s ease;
+
     
   }
 
     .icon-2:hover{
     transform: scale(1.05);
+    transition: transform 0.5s ease;
+
   }
 
     .icon-3:hover{
     transform: scale(1.05);
+    transition: transform 0.5s ease;
   }
 
     .icon-4:hover{
     transform: scale(1.05);
+    transition: transform 0.5s ease;
+
   }
 
   .icon-wrapper{
@@ -161,7 +168,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 40px;
-  color: #c59a52;
+  color: #c59a4c;
   background: transparent;
   border-radius: 50%;
   padding: 10px;
@@ -206,7 +213,7 @@ body {
   }
   
   .destaque {
-    color: #c59a52;
+    color: #c59a4c;
   }
   
   .cards {
@@ -217,7 +224,7 @@ body {
   }
   
   .card {
-    background: #f9f9f9;
+    background: #d4d4d4;
     color: #333;
     border-radius: 15px;
     padding: 20px;
@@ -228,6 +235,8 @@ body {
   
   .card:hover {
     transform: translateY(-10px);
+    background-color: #fff;
+    transition: transform 0.5s ease;
   }
   
   .card h3 {
@@ -261,7 +270,7 @@ body {
   }
   
   .btn:hover {
-    background: #c59a52;
+    background: #c59a4c;
   }
 
    .consultor {
@@ -277,7 +286,7 @@ body {
   }
   
   .consultor:hover {
-    background: #c59a52;
+    background: #c59a4c;
   }
   
   /* INVESTIMENTO */
@@ -349,7 +358,7 @@ body {
   }
   
   .btn-investimentos:hover {
-    background: #c59a52;
+    background: #c59a4c;
   }
 
   
@@ -396,7 +405,7 @@ body {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #c5940d;
+  border-color: #c59a4c;
   box-shadow: 0 0 8px rgba(197, 148, 13, 0.3);
   outline: none;
 }
@@ -475,7 +484,7 @@ body {
 
 #form-simulacao select:focus,
 #form-simulacao input:focus {
-  border-color: #c5940d;
+  border-color: #c59a4c;
   box-shadow: 0 0 8px rgba(197, 148, 13, 0.5);
   outline: none;
 }
@@ -485,7 +494,7 @@ body {
   width: 100%;
   padding: 16px 20px;
   margin-top: 30px;
-  background: linear-gradient(135deg, #c5940d, #e0a800);
+  background: linear-gradient(135deg, #c59a4c, #e0a800);
   color: white;
   font-weight: bold;
   font-size: 1.1rem;
@@ -497,7 +506,7 @@ body {
 }
 
 .botao-simular:hover {
-  background: linear-gradient(135deg, #e0a800, #c5940d);
+  background: linear-gradient(135deg, #e0a800, #c59a4c);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -515,7 +524,7 @@ body {
 }
 
 .botao-enviar:hover {
-  background-color: #b0830a;
+  background-color: #c59a4c;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -697,7 +706,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #c5940d;
+  color: #c59a4c;
 }
 
 .footer-contato p {
@@ -710,7 +719,7 @@ footer {
 }
 
 .footer-contato i {
-  color: #c5940d;
+  color: #c59a4c;
   font-size: 1rem;
 }
 
@@ -723,7 +732,7 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #c5940d;
+  color: #c59a4c;
   transform: translateY(-3px);
 }
 
@@ -939,13 +948,15 @@ footer {
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .slide {
   min-width: 100%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px;
 
 }
